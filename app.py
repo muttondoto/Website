@@ -10,3 +10,7 @@ def index_einar():
 @app.route("/Bere")
 def index_bere():
         return render_template('Bere.html')
+        
+@app.route("/Postulado")
+def index_bere():
+        return render_template('Postulado.html')

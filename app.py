@@ -19,4 +19,5 @@ def index_postulado():
 
 @app.route('/downloads/<name>')
 def download_file(name):
-        return send_from_directory(app.config["UPLOAD_FOLDER"], name)
+    PATH="/root/Website/original/LucesComoFaros.png"
+    return send_file(PATH, as_attachment=True)

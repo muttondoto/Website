@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import send_from_directory
+UPLOAD_FOLDER = '/root/Website/original'
 
 app = Flask(__name__)
 
@@ -18,4 +19,4 @@ def index_postulado():
 
 @app.route('/downloads/<name>')
 def download_file(name):
-        return send_from_directory(app.config["./original"], name)
+        return send_from_directory(app.config["UPLOAD_FOLDER"], name)

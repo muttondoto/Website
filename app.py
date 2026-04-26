@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
-from flask import send_from_directory
+from flask import send_from_directory,send_file
+
 UPLOAD_FOLDER = '/root/Website/original'
 
 app = Flask(__name__)

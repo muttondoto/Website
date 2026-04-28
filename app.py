@@ -10,14 +10,10 @@ app = Flask(__name__)
 def index_einar():
         return render_template('Einar.html')
 
-@app.route("/Bere")
-def index_bere():
-        return render_template('Bere.html')
+@app.route("/<file>")
+def html_template():
+        return render_template(file+".html")
         
-@app.route("/Postulado")
-def index_postulado():
-        return render_template('Postulado.html')
-
 @app.route('/downloads/<name>')
 def download_file(name):
     PATH=UPLOAD_FOLDER+name

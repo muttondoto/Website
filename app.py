@@ -10,9 +10,10 @@ app = Flask(__name__)
 def index_einar():
         return render_template('Einar.html')
 
-@app.route("/<file>")
+@app.route("/<name>")
 def html_template():
-        return render_template(file+".html")
+        html=name+".html"
+        return render_template(html)
         
 @app.route('/downloads/<name>')
 def download_file(name):

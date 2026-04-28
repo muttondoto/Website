@@ -11,7 +11,7 @@ def index_einar():
         return render_template('Einar.html')
 
 @app.route("/<name>")
-def html_template():
+def html_template(name):
         html=name+".html"
         return render_template(html)
         

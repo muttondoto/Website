@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index_einar():
         return render_template('Einar.html')
 
+@app.route("/Einar/<name>")
+def einar_s(name):
+        return render_template("Einar/"+name+".html")
+
 @app.route("/<name>")
 def html_template(name):
         html=name+".html"

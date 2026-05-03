@@ -5,6 +5,7 @@ from flask import send_from_directory,send_file
 UPLOAD_FOLDER = '/root/Website/original/'
 
 app = Flask(__name__)
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
 @app.route("/")
 def index_einar():

@@ -13,7 +13,7 @@ def index_einar():
 
 @app.route("/E")
 def einar_cab():
-        return render_template('Bere.html')
+        return render_template('Einar.html')
 
 @app.route("/Einar/<name>")
 def einar_s(name):

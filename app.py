@@ -11,6 +11,10 @@ app.config["TEMPLATES_AUTO_RELOAD"] = True
 def index_einar():
         return render_template('Einar.html')
 
+@app.route("/E")
+def einar_cab():
+        return render_template('Einar.html')
+
 @app.route("/Einar/<name>")
 def einar_s(name):
         return render_template("Einar/"+name+".html")
